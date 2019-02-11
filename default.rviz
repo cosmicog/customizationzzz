@@ -67,7 +67,7 @@ Visualization Manager:
       Unreliable: false
       Value: false
       Visibility:
-        "": true
+        Axes: true
         Grid: true
         Odometry: true
         Pose: true
@@ -79,7 +79,7 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        big_tag:
+        big_tag_debug:
           Value: true
         fcu_vision:
           Value: false
@@ -89,7 +89,7 @@ Visualization Manager:
           Value: true
         local_origin_ned:
           Value: false
-        tag_mania:
+        tag_mania_debug:
           Value: false
       Marker Scale: 1
       Name: TF
@@ -98,14 +98,15 @@ Visualization Manager:
       Show Names: true
       Tree:
         local_origin:
-          big_tag:
+          big_tag_debug:
             {}
+          iris_demo::camera::camera_link:
+            fcu_vision:
+              {}
           local_origin_ned:
             {}
-          tag_mania:
-            iris_demo::camera::camera_link:
-              fcu_vision:
-                {}
+          tag_mania_debug:
+            {}
       Update Interval: 0
       Value: true
     - Angle Tolerance: 0.100000001
@@ -159,7 +160,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/Axes
       Enabled: true
-      Length: 0.5
+      Length: 0.200000003
       Name: Axes
       Radius: 0.0399999991
       Reference Frame: fcu_vision
@@ -189,25 +190,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.95362234
+      Distance: 2.36682653
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.317560852
-        Y: 0.322698623
-        Z: 0.00342134875
+        X: 0.323968261
+        Y: 0.497113913
+        Z: 0.685097098
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.88979733
+      Pitch: 0.844797611
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.0248661
+      Yaw: 4.30986261
     Saved: ~
 Window Geometry:
   Camera:
