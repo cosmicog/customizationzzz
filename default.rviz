@@ -9,9 +9,11 @@ Panels:
         - /Grid1
         - /Camera1
         - /TF1
+        - /TF1/Frames1
         - /Odometry1
         - /Odometry1/Shape1
         - /Pose1
+        - /Axes1
       Splitter Ratio: 0.5
     Tree Height: 753
   - Class: rviz/Selection
@@ -65,6 +67,7 @@ Visualization Manager:
       Unreliable: false
       Value: false
       Visibility:
+        "": true
         Grid: true
         Odometry: true
         Pose: true
@@ -75,23 +78,19 @@ Visualization Manager:
       Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
         big_tag:
           Value: true
-        fcu_state:
-          Value: true
         fcu_vision:
-          Value: true
+          Value: false
         iris_demo::camera::camera_link:
           Value: true
         local_origin:
           Value: true
         local_origin_ned:
-          Value: true
-        odom_debug:
-          Value: true
+          Value: false
         tag_mania:
-          Value: true
+          Value: false
       Marker Scale: 1
       Name: TF
       Show Arrows: true
@@ -100,17 +99,13 @@ Visualization Manager:
       Tree:
         local_origin:
           big_tag:
-            iris_demo::camera::camera_link:
-              fcu_vision:
-                {}
-          fcu_state:
             {}
           local_origin_ned:
             {}
-          odom_debug:
-            {}
           tag_mania:
-            {}
+            iris_demo::camera::camera_link:
+              fcu_vision:
+                {}
       Update Interval: 0
       Value: true
     - Angle Tolerance: 0.100000001
@@ -162,6 +157,13 @@ Visualization Manager:
       Topic: /mavros/setpoint_position/local
       Unreliable: false
       Value: true
+    - Class: rviz/Axes
+      Enabled: true
+      Length: 0.5
+      Name: Axes
+      Radius: 0.0399999991
+      Reference Frame: fcu_vision
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 0; 0; 0
@@ -187,25 +189,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 4.01840067
+      Distance: 3.95362234
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.5494892
-        Y: -0.383301169
-        Z: 0.441646397
+        X: 0.317560852
+        Y: 0.322698623
+        Z: 0.00342134875
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.770204306
+      Pitch: 0.88979733
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.77801752
+      Yaw: 4.0248661
     Saved: ~
 Window Geometry:
   Camera:
@@ -225,5 +227,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1920
-  X: 0
+  X: 1920
   Y: 24
