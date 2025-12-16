@@ -1,0 +1,92 @@
+/*****************************************/
+/* Linux-specific style sheet for Webots */
+/*****************************************/
+
+QMenuBar {
+  background: auto;
+  font-size: 13px;
+}
+
+QMenuBar::item {
+  color: auto;
+  font-size: 13px;
+}
+
+QLabel#dockWidgetTitleText {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+QPushButton {
+  font-size: 13px;
+}
+
+QGroupBox#dialogInfoGroupBox {
+  font-size: 13px;
+}
+
+QGroupBox#dialogInfoGroupBox QPlainTextEdit {
+  font-size: 13px;
+}
+
+QGroupBox#dialogInfoGroupBox::title {
+  font-size: 13px;
+}
+
+QGroupBox#fieldEditorGroupBox {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#NodePane QWidget,
+#LoginTabs QWidget {
+  font-size: 13px;
+}
+
+#NodePane QAbstractSpinBox,
+#LoginTabs QAbstractSpinBox {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+QTreeView {
+  font-size: 13px;
+}
+
+QTabBar::tab {
+  font-size: 13px;
+}
+
+QLabel {
+  font-size: 13px;
+}
+
+QLineEdit {
+  font-size: 13px;
+}
+
+QAbstractSpinBox {
+  font-size: 13px;
+}
+
+QComboBox {
+  font-size: 13px;
+}
+
+QDialog * {
+  font-size: 13px;
+}
+
+WbTreeView {
+  qproperty-defaultColor: #fff;
+  qproperty-modifiedColor: #bdff00;
+  font-size: 13px;
+}
+
+QTreeView {
+  background: #222;
+  color: #fff;
+  min-width: 250px;
+  outline: none;
+  font-size: 13px;
+}
